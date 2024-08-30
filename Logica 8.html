@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Lógica 8</title>
+    <script>
+        var notas = [];
+        var soma = 0
+        for(i=0;i<4;i++) {
+            var numero = parseFloat(prompt("Informe a sua nota (0.0 a 10.0): "));
+            notas.push(numero);
+            soma+=numero;
+        }
+
+        var media = soma/notas.length;
+
+        var mensagem = "As notas utilizadas para o cálculo são"
+        for(i=0;i<4;i++) {
+            if(i==3){
+                mensagem += " " + notas[i] + ".";
+            } else {
+                mensagem += " " + notas[i] + " /";
+            }   
+        }
+
+        media >= 6.0 ? alert("Parábens você passou no teste (média: "+ media +" )") : alert("Tente Novamente (média:"+ media +")");
+        alert(mensagem);
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
