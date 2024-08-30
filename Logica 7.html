@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Lógica 7</title>
+    <script>
+        var numeros = [];
+        var soma = 0
+        for(i=0;i<6;i++) {
+            var numero = parseInt(prompt("Informe seu número: "));
+            numeros.push(numero);
+            if(numero < 72) {soma+=numero;}
+        }
+
+        var media = soma/numeros.length;
+
+        var mensagem = "Os números digitados são"
+        for(i=0;i<6;i++) {
+            if(i==5){
+                mensagem += " " + numeros[i] + ".";
+            } else {
+                mensagem += " " + numeros[i] + "/ ";
+            }   
+        }
+
+        alert(mensagem);
+        alert("A soma dos números inferiores a 72 é "+ soma);
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
