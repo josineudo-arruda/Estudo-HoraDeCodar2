@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Lógica 11</title>
+    <script>
+        var numero1 = parseFloat(prompt("Insira um número: "));
+        var numero2 = parseFloat(prompt("Insira um número: "));
+
+        var genero = parseInt(prompt("Insira qual cálculo será feito:\n1-Adição\n2-Subtração\n3-Divisão\n4-Multiplicação"));
+        switch(genero) {
+            case 1:
+                var resultado = numero1 + numero2;
+                alert("O resultado é "+ resultado);
+                break;
+            case 2:
+                var resultado = numero1 - numero2;
+                alert("O resultado é "+ resultado);
+                break;
+            case 3:
+                var resultado = numero1 / numero2;
+                alert("O resultado é "+ resultado);
+                break;
+            case 4:
+                var resultado = numero1 * numero2;
+                alert("O resultado é "+ resultado);
+                break;
+            default:
+                alert("Erro no valor inserido.")
+        }
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
