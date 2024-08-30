@@ -5,27 +5,23 @@
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
     <title>Lógica 3</title>
     <script>
-        var primeiro_numero = parseInt(prompt("Informe um número: "));
-        var numero2 = parseInt(prompt("Informe o segundo número: "));
-        var numero3 = parseInt(prompt("Informe o terceiro número: "));
-        var ultimo_numero = parseInt(prompt("Informe o quarto número: "));
 
+        var numeros = [];
+        var soma = 0
+        for(i=0;i<4;i++) {
+            var numero = parseInt(prompt("Informe seu número: "));
+            numeros.push(numero);
+            soma += numero;
+        }
         
         var maior_numero = 0;
-        if (primeiro_numero > maior_numero) {
-            maior_numero = primeiro_numero;
-        }
-        if (numero2 > maior_numero) {
-            maior_numero = numero2;
-        }
-        if (numero3 > maior_numero) {
-            maior_numero = numero3;
-        }
-        if (ultimo_numero > maior_numero) {
-            maior_numero = ultimo_numero;
+        for(i=0;i<4;i++) {
+            if (numeros[i] > maior_numero) {
+                maior_numero = numeros[i];
+            }
         }
          
-        alert("O primeiro número é "+primeiro_numero+", enquanto último número é "+ultimo_numero+" e o maior número é "+ maior_numero);
+        alert("O primeiro número é "+numeros[0]+", enquanto último número é "+numeros[3]+" e o maior número é "+ maior_numero);
     </script>
   </head>
   <body>
