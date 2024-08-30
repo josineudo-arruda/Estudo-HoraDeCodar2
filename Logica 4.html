@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Lógica 4</title>
+    <script>
+        var numero1 = parseInt(prompt("Informe um número: "));
+        var numero2 = numero1;
+        while(numero1 == numero2) {
+            numero2 =  parseInt(prompt("Informe o segundo número: "));
+        }
+        var numero3 = numero1;
+        while(numero3 == numero2 || numero3 == numero1) {
+            numero3 =  parseInt(prompt("Informe o terceiro número: "));
+        }
+        
+        var menor_numero = numero1;
+        if (menor_numero > numero2) {
+            menor_numero = numero2;
+        }
+        if (menor_numero > numero3) {
+            menor_numero = numero3;
+        }
+         
+        alert("O soma entre os dois maiores números digitados é "+ ((numero1+numero2+numero3)-menor_numero));
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
