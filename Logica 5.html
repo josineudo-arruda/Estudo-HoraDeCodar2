@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Lógica 5</title>
+    <script>
+        var numeros = [];
+        var soma = 0
+        for(i=0;i<6;i++) {
+            var numero = parseInt(prompt("Informe seu número: "));
+            numeros.push(numero);
+            soma += numero;
+        }
+
+        var media = soma/numeros.length;
+
+        var mensagem = "O número digitado é"
+        for(i=0;i<6;i++) {
+            if(i==5){
+                mensagem += " " + numeros[i] + ".";
+            } else {
+                mensagem += " " + numeros[i] + " / ";
+            }   
+        }
+
+        alert(mensagem);
+        alert("A média entre os números é "+ media);
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
