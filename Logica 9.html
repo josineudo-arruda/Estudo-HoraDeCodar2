@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Lógica 9</title>
+    <script>
+        var end = false;
+        while(!end) {
+            var data_atual = new Date;
+            var data_aniversario_string = prompt("Informe seu aniversário (DD/MM/AAAA): ");
+            if(data_aniversario_string == "" || data_aniversario_string == "00/00/0000") { 
+                alert("Data inserida incorreta. Tente novamente"); 
+            }
+            else {
+                try {
+                    var partesData = data_aniversario_string.split('/');
+                    var data_aniversario = new Date(partesData[2], partesData[1] - 1, partesData[0]);
+                    // o formato da data só pode ser trasncrita se apenas tiver com números em / /
+                    if(data_aniversario < data_atual){
+                        var diff = Math.floor((data_atual - data_aniversario) / (1000 * 60 * 60 * 24));
+                        if(diff >= 6574) {
+                            alert("User pode votar")
+                        } else {
+                            alert("User não pode votar")
+                        }
+                        end = true;
+                    } else {
+                        alert("Data inserida não aconteceu ainda. Tente novamente");
+                    }
+                }
+                catch(err) {
+                    alert("Data inserida não partilha do formato pedido DD-MM-AAAA. Tente novamente");
+                }
+            }
+        }
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
