@@ -24,7 +24,7 @@ Exercício com intuito de expor os alunos do curso PROPROFISSÃO ao ambiente de 
   10) Tendo como entrada a altura e o gênero designado ao nascer (codificado da seguinte forma: 1: feminino - 2: masculino - ) de uma pessoa, construa um programa que calcule e imprima seu peso ideal, utilizando as seguintes fórmulas.
 Fórmula para cálculo
     <p align="center">
-      <img src="exemplo/Exer-10.png" alt="fórmulas de calculo de imc">
+      <img src="imagens/10.png" alt="fórmulas de calculo de imc">
     </p>
     
   11) Uma micro calculadora
