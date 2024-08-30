@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Lógica 10</title>
+    <script>
+        var altura = parseFloat(prompt("Insira sua altura(m): "));
+
+        var genero = parseInt(prompt("Insira seu genero biológico \n1-Masculino\n2-Feminino"));
+        switch(genero) {
+            case 1:
+                var imc = (72.7 * altura) - 58;
+                alert("O imc do usuário é "+ imc);
+                break;
+            case 2:
+                var imc = (62.1 * altura) - 44.7;
+                alert("O imc do usuário é "+ imc);
+                break;
+            default:
+                alert("Erro no valor inserido.")
+        }
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
