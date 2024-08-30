@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Lógica 3</title>
+    <script>
+        var numero1 = parseInt(prompt("Informe um número: "));
+        var numero2 = numero1;
+        while(numero1 == numero2) {
+            numero2 =  parseInt(prompt("Informe o segundo número: "));
+        }
+        var numero3 = numero1;
+        while(numero3 == numero2 || numero3 == numero1) {
+            numero3 =  parseInt(prompt("Informe o terceiro número: "));
+        }
+        
+        var maior_numero = 0;
+        if (numero1 > maior_numero) {
+            maior_numero = numero1;
+        }
+        if (numero2 > maior_numero) {
+            maior_numero = numero2;
+        }
+        if (numero3 > maior_numero) {
+            maior_numero = numero3;
+        }
+         
+        alert("O maior número digitado é "+ maior_numero);
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
